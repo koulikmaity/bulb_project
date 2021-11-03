@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Bulb On/Off Project</title>
+</head>
+<body>
+    <div id="bulbcontainer">
+        <div id="Div1">
+            <div>
+              <h2>Light On-Off</h2>  
+            </div>
+            
+           <img src="BulbOff.jpg" id="light"> 
+        </div>
+    </div>
+    <button onclick="bulb()" >Bulb On/Off</button>
+    <script type="text/javascript">
+         
+        const bulb = () => 
+        {
+            let b = document.getElementById('light');
+
+            if(b.src.match('BulbOn'))
+            {
+               b.src="BulbOff.jpg";
+            }
+            else{
+                b.src="BulbOn.jpg";
+            }
+        }
+        
+
+    </script>
+</body>
+</html>
